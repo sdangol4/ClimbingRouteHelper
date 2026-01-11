@@ -1,3 +1,12 @@
+#root {
+  background-color: #000000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -9,6 +18,28 @@ h1 {
   font-size: 5rem;
   color: aliceblue;
 
+}
+
+.ImageContainer {
+  width: 100%;
+ 
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.SortBy{
+  display: flex;
+  justify-content: center;
+  
 }
 
 
@@ -23,4 +54,5 @@ padding-bottom: 1rem;
   background-color: #000000;
   min-height: 100vh; /* Ensures the container covers the full view height */
   color: rgb(145, 140, 140);
+
 }
