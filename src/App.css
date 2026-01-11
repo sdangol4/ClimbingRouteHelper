@@ -2,4 +2,25 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+
+  font-size: 5rem;
+  color: aliceblue;
+
+}
+
+
+.NavBar
+{
+display: flex;
+justify-content: center;
+padding-bottom: 1rem;
+}
+
+.App {
+  background-color: #000000;
+  min-height: 100vh; /* Ensures the container covers the full view height */
+  color: rgb(145, 140, 140);
 }
