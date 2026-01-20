@@ -41,6 +41,34 @@ h1 {
   justify-content: center;
   
 }
+.Card{
+ 
+  width: 100%;
+}
+
+.Cards{
+  display: grid;
+  grid-template-columns: repeat(2, 420px);
+  gap: 32px;
+  justify-content: center;
+  padding: 24px;
+}
+
+
+.RouteDetails{
+  justify-content: center;
+  padding: 24px;
+}
+
+
+
+@media (max-width: 900px) {
+  .Cards {
+    grid-template-columns: minmax(0, 420px);
+    justify-content: center;
+  }
+}
+
 
 
 .NavBar
