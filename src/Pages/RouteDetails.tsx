@@ -7,19 +7,19 @@ import { useState } from "react";
 
 type Route = {
 
-    color: string;
-    difficuty: string;
-    id: string;
-    imageUrl: string;
-    videoUrl: string;
-    name: string;
+  color: string;
+  difficuty: string;
+  id: string;
+  imageUrl: string;
+  videoUrl: string;
+  name: string;
 }
 
 const RouteDetails = () => {
-    const [route, setRoute] = useState<Route | null>(null);
-    const { id } = useParams<{ id: string }>();
+  const [route, setRoute] = useState<Route | null>(null);
+  const { id } = useParams<{ id: string }>();
 
- useEffect(() => {
+  useEffect(() => {
     if (!id) return;
 
     const getRoute = async () => {
@@ -48,13 +48,17 @@ const RouteDetails = () => {
   }, [id]);
 
 
-    return (
-        <div className="RouteDetails">
-            <h1>Route Details</h1>
-            <CardVideo prop={route} />
-        </div>
+  return (
+    <div className="RouteDetails">
+      <h1>Route Details</h1>
+      {route ? (
+        <CardVideo prop={route} />
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
 
-    )
+  )
 }
 
 export default RouteDetails

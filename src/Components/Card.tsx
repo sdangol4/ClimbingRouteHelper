@@ -3,10 +3,17 @@ import {
     CardAction,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+
+type CardProps = {
+    prop: {
+        name?: string;
+        grade?: string;
+        imageUrl?:string;
+    }
+}
 
 const CardComponent = ({prop}: CardProps) => {
     return (

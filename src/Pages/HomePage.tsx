@@ -1,4 +1,3 @@
-import LogIn from '../Components/LogIn.js';
 import Wallimage from '../Components/wallimage.js';
 import SortBy from '../Components/SortBy.js';
 import Routes from '../Components/Routes.js';

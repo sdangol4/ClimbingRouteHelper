@@ -1,4 +1,3 @@
-import LogIn from '../Components/LogIn.js';
 
 const Admin = () => {
   return (

@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+.firebase/
+.firebaserc
+firebase.json
+
 config
 
 # Editor directories and files
