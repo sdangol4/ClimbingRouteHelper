@@ -35,7 +35,7 @@ const CardVideo = ({ prop }: CardVideoProps) => {
                     <div className="relative w-full aspect-[16/9]">
                         <iframe
                             src={`${prop.videoUrl}`}
-                            width="50%"
+                            width="100%"
                             height="400"
                             
                             allowFullScreen
@@ -49,7 +49,7 @@ const CardVideo = ({ prop }: CardVideoProps) => {
                         <div className="relative w-full aspect-[16/9]">
                             <iframe
                                 src={prop.videoUrl2}
-                                width="50%"
+                                width="100%"
                                 height="400"
                                 
                                 allowFullScreen
