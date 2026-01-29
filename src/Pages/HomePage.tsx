@@ -1,5 +1,5 @@
 import Wallimage from '../Components/wallimage.js';
-import SortBy from '../Components/SortBy.js';
+
 import Routes from '../Components/Routes.js';
 
  
@@ -12,7 +12,7 @@ const HomePage = () => {
        
 
             <Wallimage />
-            <SortBy />
+            
 
             <Routes />
 

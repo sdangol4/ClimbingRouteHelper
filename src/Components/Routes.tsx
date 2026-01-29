@@ -36,7 +36,6 @@ const Routes = () => {
 
       setRoutList(filteredData);
 
-      console.log(filteredData)
     }
     catch (err) {
       console.error(err);

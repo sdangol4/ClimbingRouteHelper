@@ -13,6 +13,8 @@ type CardProps = {
         grade?: string;
         imageUrl?:string;
     }
+
+    
 }
 
 const CardComponent = ({prop}: CardProps) => {
@@ -21,7 +23,7 @@ const CardComponent = ({prop}: CardProps) => {
             <Card className="rounded-md max-w-sm mx-auto h-auto shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
                 <CardHeader>
                     <CardTitle>{prop.name}</CardTitle>
-                    <CardDescription>Card Description</CardDescription>
+                    <CardDescription>{prop.grade}</CardDescription>
                     <CardAction>{prop.grade}</CardAction>
                 </CardHeader>
                 <CardContent className="w-full h-[260px] px-6 flex items-center justify-center" >

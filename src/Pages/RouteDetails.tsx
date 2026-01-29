@@ -37,7 +37,6 @@ const RouteDetails = () => {
           id: routeSnap.id,
           ...(routeSnap.data() as Omit<Route, "id">),
         };
-        console.log(routeData)
         setRoute(routeData);
       } catch (error) {
         console.error(error);
