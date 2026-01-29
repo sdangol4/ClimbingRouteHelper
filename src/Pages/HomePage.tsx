@@ -1,9 +1,13 @@
 import Wallimage from '../Components/wallimage.js';
-
+import { useState } from 'react';
 import Routes from '../Components/Routes.js';
+import SortBy from '@/Components/SortBy.js';
 
  
 const HomePage = () => {
+      const [sortBy, setSortBy] = useState<"Highest" | "Lowest">("Lowest");
+
+
    
     return (
         <div>
@@ -13,8 +17,9 @@ const HomePage = () => {
 
             <Wallimage />
             
+            <SortBy sortBy={sortBy} setSortBy={setSortBy}/>
 
-            <Routes />
+            <Routes sortBy={sortBy}/>
 
          
         </div>

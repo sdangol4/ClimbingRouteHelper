@@ -13,9 +13,9 @@ type CardProps = {
         grade?: string;
         imageUrl?:string;
     }
-
-    
 }
+
+
 
 const CardComponent = ({prop}: CardProps) => {
     return (
@@ -27,7 +27,7 @@ const CardComponent = ({prop}: CardProps) => {
                     <CardAction>{prop.grade}</CardAction>
                 </CardHeader>
                 <CardContent className="w-full h-[260px] px-6 flex items-center justify-center" >
-                    <img className="w-full h-full object-contain scale-110" src={prop.imageUrl} alt="Burden Of Dreams"/> 
+                    <img className="w-full h-full object-contain scale-110" src={prop.imageUrl || undefined} alt="Burden Of Dreams"/> 
                 </CardContent>
              
             </Card>
